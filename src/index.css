@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Preahvihear&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @layer utilities{
     .gradient_img{
         background-image: url('Gradient.png');
         width: 100%;
         height: 100%;
+    }
+    .gradient_hover{
+       
+
     }
 }
