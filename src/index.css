@@ -11,3 +11,16 @@
 
     }
 }
+@theme{
+    @keyframes my_bounce{
+        0%,100%{
+             transform:translateY(0px);
+        }
+       
+        50%{
+             transform:translateY(-10px);
+        }
+       
+    }
+    --animate-my_bounce:my_bounce 4s ease-in-out forwards infinite;
+}
