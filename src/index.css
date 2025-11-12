@@ -1,26 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-@layer utilities{
-    .gradient_img{
+@layer components{
+    .contact-input{
+        background-color: #1e293b;
+        padding: 0.75rem 1rem;
+        transition: all 0.5s ease-in;
+        border: 1px solid #334155 ;
+        
+    }
+    .contact-input:focus{
+        border-color: #0ea5e9;
+        box-shadow: 0 0 0 2 rgba(14, 165, 233, 0.2);
+    }
+}
+@layer utilities {
+    .gradient_img {
         background-image: url('Gradient.png');
         width: 100%;
         height: 100%;
     }
-    .gradient_hover{
-       
+
+    .skill-bar {
+        height: 8px;
+        border-radius: 4px;
+        background-color: #1e293b;
+    }
+
+    .skill-progress {
+        height: 100%;
+        border-radius: 4px;
+        background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+        transition: width 1s ease-in-out;
+    }
+    .hover-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 25px rgba(14, 165, 233, 0.2);
+        
+   
+    }
+    .project-card{
+       background: linear-gradient(145deg, #1e293b, #0f172a);
+        box-shadow: 5px 5px 15px rgba(2, 6, 23, 0.5), -5px -5px 15px rgba(30, 41, 59, 0.5);
+    }
+
+   
+
+
+}
+
+@theme {
+    --color-textDim: rgb(148, 163, 184);
+    --color-Primary: #0F172A;
+    --color-secondary: #020617;
+    --color-LinkPrimary:rgb(14, 165, 233);
+    --color-LinkSecondary:rgb(14, 165, 233);
+
+    @keyframes my_bounce {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
 
     }
-}
-@theme{
-    @keyframes my_bounce{
-        0%,100%{
-             transform:translateY(0px);
-        }
-       
-        50%{
-             transform:translateY(-10px);
-        }
-       
-    }
+
     --animate-my_bounce:my_bounce 4s ease-in-out forwards infinite;
+
 }

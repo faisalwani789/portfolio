@@ -2,6 +2,10 @@ import React from 'react'
 import Header from './components/Header'
 import MainComponent from './components/MainComponent'
 import About from './components/About'
+import Skills from './components/Skills'
+import Tools from './components/Tools'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
@@ -9,6 +13,9 @@ const App = () => {
         <Header/>
         <MainComponent/>
         <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
     </div>
   )
 }
