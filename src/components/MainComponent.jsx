@@ -18,8 +18,7 @@ const MainComponent = () => {
         return ()=>clearInterval(timer)
     },[])
     return (
-        <Section background={'Primary'}>
-        <div className=' flex md:flex-row flex-col justify-between items-center '>
+        <Section  background={'Primary'} className={' flex items-center min-h-screen  pt-20'} id={'home'} containerClass={'flex md:flex-row flex-col justify-between items-center'}>       
             <div className=' md:w-1/2 mb-12 '>
             
                 <h2 className='text-6xl font-bold mb-4  '>
@@ -43,9 +42,6 @@ const MainComponent = () => {
                 <img className='w-full h-full object-cover object-top rounded-[50%] ' src="hero.jpg" alt="image" />
                </div>
             </div>
-            
-            
-        </div>
         </Section>
     )
 }

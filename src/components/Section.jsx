@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Section = ({children,background}) => {
+const Section = ({children,background,id ,className='',containerClass=''}) => {
   return (
-    <section className={`py-20 text-white font-[Inter] bg-${background}`}>
-        <div className='container px-6 mx-auto'>
+    <section id={id} className={` text-white font-[Inter] bg-${background} ${className}`}>
+        <div className={`container px-6 mx-auto ${containerClass} `}>
             {children}
         </div>
     </section>

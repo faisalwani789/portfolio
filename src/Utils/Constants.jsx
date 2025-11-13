@@ -152,3 +152,21 @@ export const FormData2=[
   }
   
 ]
+export const LinkData=[
+   {
+    text:"Home",
+    isActive:true
+   },
+    {
+    text:"About"
+   },
+    {
+    text:"Skills"
+   },
+    {
+    text:"Projects"
+   },
+    {
+    text:"Contact"
+   },
+]
