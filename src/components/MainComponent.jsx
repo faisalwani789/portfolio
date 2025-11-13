@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState,  } from 'react'
-import {FaGithub,FaLinkedin,FaTwitter} from "react-icons/fa"
-import Buttons from './Buttons'
 import { buttonSocialData } from '../Utils/Constants'
 import SocialButton from './SocialButton'
+import LinearBgButton from './LinearBgButton'
+
 const MainComponent = () => {
     const [position,setPosition]=useState('Frontend Developer')
    
@@ -26,7 +26,13 @@ const MainComponent = () => {
                 </h2>
                 <p className='text-3xl mb-6  font-semibold'>{position}</p>
                 <p className='text-lg mb-8  max-w-140 font-normal text-textDim '>I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.</p>
-                <Buttons button1={"Hire me"} button2={"View work"}/>
+                <div  className='my-8 flex space-x-4 '>
+                    <LinearBgButton variant='primary'>Hire Me</LinearBgButton>
+                    {/* <BgButton button={'view work'}/> */}
+                    <LinearBgButton variant='secondary'>View work</LinearBgButton>
+                </div>
+                
+                
                 <div className='flex space-x-4'>  
                    {buttonSocialData.map(button=><SocialButton icon={button.icon}/>)}     
                 </div>

@@ -4,8 +4,10 @@ import TitleColor from './TitleColor'
 import ContactCard from './ContactCard'
 import { buttonSocialData, contactCardData,FormData, FormData2 } from '../Utils/Constants'
 import SocialButton from './SocialButton'
-
+import LinearBgButton from "./LinearBgButton"
 import InputBox from './InputBox'
+import IconButton from './IconButton'
+import {FaTelegram} from 'react-icons/fa'
 
 const Contact = () => {
   return (
@@ -40,10 +42,10 @@ const Contact = () => {
                {FormData.map(input=><InputBox name={input.name}/>)}
                <div>
                 <label htmlFor='Message' className='mb-2 block'>Your Message</label>
-                <textarea style={{height:'36px'}} className='contact-input w-full rounded-lg focus:outline-none ' rows={'5'} id='Message' required></textarea>
+                <textarea style={{height:'123px'}} className='contact-input w-full rounded-lg focus:outline-none ' rows={'5'} id='Message' required></textarea>
                </div>
               </div>
-              
+             <IconButton variant={'primary'} className='flex gap-2 items-center justify-center w-full' icon={FaTelegram}>Send Message</IconButton>
             </form>
           </div>
         </div>

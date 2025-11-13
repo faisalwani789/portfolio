@@ -1,7 +1,8 @@
 import React from 'react'
 import TitleColor from './TitleColor'
 import Title from './Title'
-import Buttons from './Buttons'
+
+import LinearBgButton from './LinearBgButton'
 const About = () => {
   return (
     <div className='bg-secondary font-[Inter] text-white py-20'>
@@ -33,7 +34,10 @@ const About = () => {
                 <h4>Location:<span>Anantnag, India</span></h4>
               </div>
             </div>
-            <Buttons button1={'Download CV'} button2={'Contact Me'} />
+            <div className='my-8 flex space-x-4 '>
+              <LinearBgButton variant='primary' >Download CV</LinearBgButton>
+              <LinearBgButton variant='secondary'>Contact Me</LinearBgButton>
+            </div>
           </div>
         </div>
       </div>

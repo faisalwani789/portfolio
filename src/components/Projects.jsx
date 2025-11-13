@@ -3,7 +3,7 @@ import Title from "./Title"
 import TitleColor from "./TitleColor"
 import ProjectCard from './ProjectCard'
 import { ProjectCardData } from '../Utils/Constants'
-import Buttons from "./Buttons"
+
 const Projects = () => {
     return (
         <section className=' bg-secondary py-20'>
