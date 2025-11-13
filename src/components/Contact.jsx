@@ -8,11 +8,11 @@ import LinearBgButton from "./LinearBgButton"
 import InputBox from './InputBox'
 import IconButton from './IconButton'
 import {FaTelegram} from 'react-icons/fa'
+import Section from './Section'
 
 const Contact = () => {
   return (
-    <section className='bg-Primary py-20 font-[Inter] text-white'>
-      <div className='container mx-auto px-6 '>
+    <Section background={'Primary'}>
         <div className='mb-16'><Title title={'Get In'} ><TitleColor title={'Touch'} /></Title></div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
           <div>
@@ -49,8 +49,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
-    </section>
+    </Section>
   )
 }
 

@@ -3,9 +3,10 @@ import Title from './Title'
 import TitleColor from './TitleColor'
 import SkillBar from './SkillBar'
 import Tools from './Tools'
+import Section from './Section'
 const Skills = () => {
     return (
-        <section className='bg-Primary font-[Inter] text-white py-20'>
+        <Section background={'Primary'}>
             <div className='mb-16'>
                 <Title title={'My'}> <TitleColor title={'Skills'} /></Title>
             </div>
@@ -39,7 +40,7 @@ const Skills = () => {
 
                 <Tools/>
             </div>
-        </section>
+       </Section>
     )
 }
 

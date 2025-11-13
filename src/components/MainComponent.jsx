@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState,  } from 'react'
 import { buttonSocialData } from '../Utils/Constants'
 import SocialButton from './SocialButton'
 import LinearBgButton from './LinearBgButton'
-
+import Section from "./Section"
 const MainComponent = () => {
     const [position,setPosition]=useState('Frontend Developer')
    
@@ -18,8 +18,9 @@ const MainComponent = () => {
         return ()=>clearInterval(timer)
     },[])
     return (
-        <div className='bg-Primary mx-auto flex md:flex-row flex-col justify-between items-center py-55 px-6 font-[Inter]'>
-            <div className='text-white md:w-1/2 mb-12 '>
+        <Section background={'Primary'}>
+        <div className=' flex md:flex-row flex-col justify-between items-center '>
+            <div className=' md:w-1/2 mb-12 '>
             
                 <h2 className='text-6xl font-bold mb-4  '>
                     Hi, I'm <span className='bg-linear-to-r from-[#139FE8] via-[#139FE8] to-[#7B26CF] text-transparent bg-clip-text'>Faisal Yousuf</span>
@@ -45,6 +46,7 @@ const MainComponent = () => {
             
             
         </div>
+        </Section>
     )
 }
 

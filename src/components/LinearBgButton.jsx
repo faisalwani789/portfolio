@@ -12,7 +12,7 @@ const LinearBgButton = ({children,variant="primary",size="md",className="",...pr
     lg:'px-5 py-3 text-lg'
   }
   const classes=`${Base} ${variants[variant]} ${sizes[size]} ${className} }`
-  console.log(classes)
+  
   return (
     <button className={classes} {...props}>{children}</button>
   )

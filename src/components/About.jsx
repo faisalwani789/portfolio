@@ -1,12 +1,11 @@
 import React from 'react'
 import TitleColor from './TitleColor'
 import Title from './Title'
-
+import Section from './Section'
 import LinearBgButton from './LinearBgButton'
 const About = () => {
   return (
-    <div className='bg-secondary font-[Inter] text-white py-20'>
-      <div className='mx-auto px-6 container'>
+    <Section background={'Secondary'} >
         <div className='mb-16'>
           <Title title={'About'}> <TitleColor title={'Me'} /></Title>
         </div>
@@ -40,8 +39,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    </Section>
   )
 }
 

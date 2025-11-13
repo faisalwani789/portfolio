@@ -3,11 +3,10 @@ import Title from "./Title"
 import TitleColor from "./TitleColor"
 import ProjectCard from './ProjectCard'
 import { ProjectCardData } from '../Utils/Constants'
-
+import Section from './Section'
 const Projects = () => {
     return (
-        <section className=' bg-secondary py-20'>
-            <div className='container mx-auto px-6  '>
+        <Section background={'Secondary'}>
                 <div className='mb-16'>
                     <Title title={'My'} ><TitleColor title={'Projects'} /></Title>
                 </div>
@@ -16,8 +15,7 @@ const Projects = () => {
    
                 </div>
                 
-            </div>
-        </section>
+          </Section>
     )
 }
 
