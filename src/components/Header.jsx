@@ -21,7 +21,7 @@ const Header = () => {
           
           <ul className=' text-white hidden md:flex md:gap-8 md:justify-between '>
 
-            {LinkData.map(link => <Navlink active={active} setActive={setActive}>{link.text}</Navlink>)}
+            {LinkData.map(link => <Navlink key={link.id} active={active} setActive={setActive}>{link.text}</Navlink>)}
 
           </ul>
           <div className='md:hidden'>

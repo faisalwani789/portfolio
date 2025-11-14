@@ -53,7 +53,7 @@ const MainComponent = () => {
                 
                 
                 <div className=' mt-8 flex space-x-4'>  
-                   {buttonSocialData.map(button=><SocialButton icon={button.icon} background={'social'}/>)}     
+                   {buttonSocialData.map(button=><SocialButton key={button.id} icon={button.icon} background={'social'}/>)}     
                 </div>
             </div>
             <div className=' flex-1 flex justify-center items-center'>

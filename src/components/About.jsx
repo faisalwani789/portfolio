@@ -12,7 +12,7 @@ const About = () => {
         <div className='flex md:flex-row flex-col items-center'>
           <div className='md:w-1/3 mb-12 md:mb-0 flex justify-center'>
             <div className='w-64 h-64 relative rounded-2xl '>
-              <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
               <img className=' relative w-full h-full object-cover object-top rounded-2xl border-4 border-slate-800' src="hero.jpg" alt="" />
             </div>
           </div>

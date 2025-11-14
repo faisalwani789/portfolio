@@ -19,13 +19,13 @@ const Contact = () => {
             <h2 className='font-bold text-2xl mb-6'>Contact Information</h2>
             <p className='text-slate-400 mb-8'>Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
             <div className='space-y-6'>
-              {contactCardData.map(cardData => <ContactCard icon={cardData.icon} iconName={cardData.iconName} iconData={cardData.iconData} />)}
+              {contactCardData.map(cardData => <ContactCard key={cardData.id} icon={cardData.icon} iconName={cardData.iconName} iconData={cardData.iconData} />)}
 
             </div>
             <div className='mt-8'>
               <h2 className='font-bold mb-4'>Follow Me</h2>
               <div className='flex space-x-4'>
-                {buttonSocialData.map(button => <SocialButton icon={button.icon} background={'social'} />)}
+                {buttonSocialData.map(button => <SocialButton key={button.id} icon={button.icon} background={'social'} />)}
               </div>
             </div>
 
@@ -35,11 +35,11 @@ const Contact = () => {
             <h2 className='font-bold text-2xl mb-6'>Send Me a Message</h2>
             <form className='space-y-6'>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-               {FormData2.map(input=><InputBox name={input.name}/>)}
+               {FormData2.map(input=><InputBox key={input.id} name={input.name}/>)}
               </div>
 
               <div>
-               {FormData.map(input=><InputBox name={input.name}/>)}
+               {FormData.map(input=><InputBox key={input.id} name={input.name}/>)}
                <div>
                 <label htmlFor='Message' className='mb-2 block'>Your Message</label>
                 <textarea style={{height:'123px'}} className='contact-input w-full rounded-lg focus:outline-none ' rows={'5'} id='Message' required></textarea>
