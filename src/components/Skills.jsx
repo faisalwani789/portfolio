@@ -6,7 +6,7 @@ import Tools from './Tools'
 import Section from './Section'
 const Skills = () => {
     return (
-        <Section background={'Primary'}>
+        <Section background={'primary'} id={'Skills'}>
             <div className='mb-16'>
                 <Title title={'My'}> <TitleColor title={'Skills'} /></Title>
             </div>

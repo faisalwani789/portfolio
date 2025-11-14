@@ -6,7 +6,7 @@ import { ProjectCardData } from '../Utils/Constants'
 import Section from './Section'
 const Projects = () => {
     return (
-        <Section background={'Secondary'}>
+        <Section background={'secondary'} id={"Projects"}>
                 <div className='mb-16'>
                     <Title title={'My'} ><TitleColor title={'Projects'} /></Title>
                 </div>

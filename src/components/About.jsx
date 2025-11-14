@@ -5,7 +5,7 @@ import Section from './Section'
 import LinearBgButton from './LinearBgButton'
 const About = () => {
   return (
-    <Section background={'Secondary'} >
+    <Section background={'secondary'} id={'About'} >
         <div className='mb-16'>
           <Title title={'About'}> <TitleColor title={'Me'} /></Title>
         </div>

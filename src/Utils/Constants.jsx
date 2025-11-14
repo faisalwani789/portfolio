@@ -127,7 +127,7 @@ export const contactCardData=[
   {
     icon:faPhone,
     iconName:'Email',
-    iconData:'faisalYousuf7799@gmail.com'
+    iconData:'faisal@gmail.com'
   },
   {
     icon:faEnvelope,

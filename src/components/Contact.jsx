@@ -12,7 +12,7 @@ import Section from './Section'
 
 const Contact = () => {
   return (
-    <Section background={'Primary'}>
+    <Section background={'primary'} id={'Contact'}>
         <div className='mb-16'><Title title={'Get In'} ><TitleColor title={'Touch'} /></Title></div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
           <div>
@@ -25,7 +25,7 @@ const Contact = () => {
             <div className='mt-8'>
               <h2 className='font-bold mb-4'>Follow Me</h2>
               <div className='flex space-x-4'>
-                {buttonSocialData.map(button => <SocialButton icon={button.icon} />)}
+                {buttonSocialData.map(button => <SocialButton icon={button.icon} background={'social'} />)}
               </div>
             </div>
 
