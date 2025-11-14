@@ -31,8 +31,7 @@ const MainComponent = () => {
     const handleScroll = () => {
 
       setScrolled(window.scrollY > 400)
-      console.log(window.scrollY)
-      console.log(scrolled)
+     
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)

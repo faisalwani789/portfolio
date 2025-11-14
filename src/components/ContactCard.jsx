@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 const ContactCard = ({icon,iconName,iconData}) => {
   return (
-    <div className='text-white flex items-center items-start '>
+    <div className='text-white flex  items-start '>
         <div className='rounded-full bg-slate-800 p-4 mr-4'>
             <FontAwesomeIcon className='text-LinkPrimary text-lg  ' icon={icon} /> 
         </div>

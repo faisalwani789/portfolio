@@ -1,12 +1,11 @@
 import React,{useState} from 'react'
 import Navlink from './Navlink'
 import { LinkData } from '../Utils/Constants'
-const MobileMenu = () => {
-   const[openMenu,setOpenMenu]=useState(false)
+const MobileMenu = ({active,setActive}) => {
   return (
     <div className=' md:hidden  '>
         <ul className='pb-2 mt-4'>
-          {LinkData.map((link)=>(<Navlink isActive={link?.isActive}>{link.text}</Navlink>))}
+          {LinkData.map((link)=>(<Navlink active={active} setActive={setActive}>{link.text}</Navlink>))}
         </ul>
        
     </div>

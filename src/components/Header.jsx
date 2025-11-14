@@ -31,7 +31,7 @@ const Header = () => {
           
           </div>
         </div>
-         {openMenu && <MobileMenu />}
+         {openMenu && <MobileMenu active={active} setActive={setActive} />}
       </div>
     </nav>
   )

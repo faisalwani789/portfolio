@@ -9,16 +9,16 @@ import Contact from './components/Contact'
 
 
 const App = () => {
-  useEffect(()=>{
-    console.log(document.documentElement.clientWidth)
-    console.log(window.innerWidth)
-    const raf=requestAnimationFrame(()=>{
- console.log(document.body.clientWidth)
+//   useEffect(()=>{
+//     console.log(document.documentElement.clientWidth)
+//     console.log(window.innerWidth)
+//     const raf=requestAnimationFrame(()=>{
+//  console.log(document.body.clientWidth)
 
- return ()=>cancelAnimationFrame(raf)
-    })
+//  return ()=>cancelAnimationFrame(raf)
+//     })
    
-  },[])
+//   },[])
   return (
     <div>
         <Header/>
