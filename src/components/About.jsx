@@ -4,6 +4,12 @@ import Title from './Title'
 import Section from './Section'
 import LinearBgButton from './LinearBgButton'
 const About = () => {
+  const scrollDestination=(id)=>{
+        document.getElementById(`${id}`).scrollIntoView({
+            behavior:'smooth',
+            block:'center'
+        })
+    }
   return (
     <Section background={'secondary'} id={'About'} >
         <div className='mb-16'>
@@ -34,8 +40,8 @@ const About = () => {
               </div>
             </div>
             <div className='my-8 flex space-x-4 '>
-              <LinearBgButton variant='primary' >Download CV</LinearBgButton>
-              <LinearBgButton variant='secondary'>Contact Me</LinearBgButton>
+              <LinearBgButton variant='primary'><a href="https://drive.google.com/file/d/1wQXn5nfOZno606vPJCgzayNfnr5-k23r/view?usp=drivesdk">Download CV</a></LinearBgButton>
+              <LinearBgButton variant='secondary' onClick={()=>scrollDestination('Contact')}>Contact Me</LinearBgButton>
             </div>
           </div>
         </div>

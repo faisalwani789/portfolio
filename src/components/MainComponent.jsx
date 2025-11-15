@@ -17,6 +17,13 @@ const MainComponent = () => {
             behavior:'smooth'
         })
     }
+    const scrollDestination=(id)=>{
+        document.getElementById(`${id}`).scrollIntoView({
+            behavior:'smooth',
+            block:'start'
+        })
+    }
+    
     useEffect(()=>{
         const arr=['Frontend Developer','node.js Developer','MERN Developer']
         const timer=setInterval(()=>{
@@ -46,8 +53,8 @@ const MainComponent = () => {
                 <h2 className='text-2xl md:text-3xl  mb-6 font-semibold text-slate-300'>{position}</h2>
                 <p className='text-lg mb-8  max-w-lg font-normal text-slate-400 '>I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.</p>
                 <div  className=' flex space-x-4 '>
-                    <LinearBgButton variant='primary'>Hire Me</LinearBgButton>
-                    <LinearBgButton variant='secondary'>View work</LinearBgButton>
+                    <LinearBgButton variant='primary' onClick={()=>scrollDestination('Contact')}>Hire Me</LinearBgButton>
+                    <LinearBgButton variant='secondary' onClick={()=>scrollDestination('Projects')}>View work</LinearBgButton>
                     
                 </div>
                 

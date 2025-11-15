@@ -156,23 +156,25 @@ export const contactCardData=[
     iconData:'93939393939'
   }
 ]
-export const FormData=[
+export const FormInfo=[
   {
      id:1,
     name:'Subject',
-
+    text:'Subject'
   }
   
 ]
-export const FormData2=[
+export const FormInfo2=[
   {
      id:1,
-    name:'Your Name',
+    name:'Name',
+    text:"Your Name"
 
   },
   {
      id:2,
-    name:"Your Email"
+    name:"Email",
+    text:'Your Email'
   }
   
 ]
