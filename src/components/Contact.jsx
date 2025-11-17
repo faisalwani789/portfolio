@@ -102,7 +102,7 @@ const Contact = () => {
 
       {isSubmitting && <Popup isSubmitSuccessful={isSubmitSuccessful} submitting={isSubmitting} ></Popup>}
       {showMsg && createPortal(
-        <div className='fixed z-100 left-1/2 top-30 -translate-x-1/2  mx-auto pt-1 w-1/3 h-10 bg-LinkPrimary text-white font-[Inter] rounded-lg text-center text-lg'>{successMsg}</div>
+        <div className='fixed z-100 left-1/2 top-5 -translate-x-1/2  mx-auto p-1   bg-LinkPrimary text-white font-[Inter] rounded-lg text-center text-lg'>{successMsg}</div>
         , document.body)
       }
     </Section>
