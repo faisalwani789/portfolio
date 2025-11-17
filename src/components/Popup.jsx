@@ -1,13 +1,13 @@
 import React from 'react'
 import { useEffect } from 'react'
-import {ClipLoader} from 'react-spinners'
-const Popup = ({successMsg,messageSent,setMessageSent,setSuccessMsg,submitting}) => {
-    const handleClick=()=>{
-      setMessageSent(false)
-      setSuccessMsg('')
-    }
+import {RingLoader} from 'react-spinners'
+const Popup = ({submitting}) => {
+    // const handleClick=()=>{
+    //   setMessageSent(false)
+    //   setSuccessMsg('')
+    // }
     useEffect(() => {
-    if (messageSent) {
+    if (submitting) {
       document.body.classList.add('overflow-hidden')
     }
     else {
@@ -17,12 +17,11 @@ const Popup = ({successMsg,messageSent,setMessageSent,setSuccessMsg,submitting})
       document.body.classList.remove('overflow-hidden')
      
     }
-  }, [messageSent])
+  }, [submitting])
   return (
-    <div className='fixed inset-0 bg-black/60 z-60 ' onClick={handleClick}>
-          {submitting ?(<><ClipLoader size={16} color='fff'/> <span className='ml-8'>submitting...</span></>):
-        <div className=' mx-auto pt-1 w-1/3 h-10 bg-LinkPrimary text-white font-[Inter] rounded-lg text-center text-lg'>{successMsg}</div>
-        }
+    <div className='fixed inset-0 bg-black/60 z-60 flex justify-center items-center ' >
+          {submitting && (<><RingLoader size={32} color='#F3E3EB'/> <span className='ml-8 text-amber-50'>Sending...</span></>)}
+          
     </div>
   )
 }
