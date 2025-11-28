@@ -115,7 +115,18 @@ export const ProjectCardData=[
     to:"https://netmax-gpt-ic3d.vercel.app"
   },
   {
-     id:2,
+    id:2,
+    image:'youtube_home.png',
+    heading:'Youtube-clone',
+    description:'a mini clone version of youtube showing popular videos, video information,comments, auto suggestions ,search feature,live comments',
+    span1:'React',
+    span2:'Redux',
+    span3:'Tailwind',
+    to:'https://youtube-two-tawny.vercel.app/'
+
+  },
+  {
+     id:3,
     image:'school.png',
     heading:"School Website",
     description:'A simple and intuitive school website, designed to showcase school information, including teachers, infrastructure etc.',
@@ -125,7 +136,7 @@ export const ProjectCardData=[
     to:'https://myschool-0xnd.onrender.com/home'
   },
    {
-     id:3,
+     id:4,
     image:'portfolio.png',
     heading:"My portfolio",
     description:'Personel developer Portfolio , highlighting Contact Information, developer projects ,tools and technologies',
