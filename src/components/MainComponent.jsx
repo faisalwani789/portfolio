@@ -65,7 +65,7 @@ const MainComponent = () => {
             </div>
             <div className=' flex-1 flex justify-center items-center'>
                <div className='w-64 h-64 md:w-90 md:h-90 lg:w-96 lg:h-96 rounded-[50%] animate-my_bounce duration-1000 ease-in-out'>
-                <img className='w-full h-full object-cover object-top rounded-[50%] ' src="hero.jpg" alt="image" />
+                <img className='w-full h-full object-cover object-top rounded-[50%] ' src="" alt="image" />
                </div>
             </div>
             {scrolled && <div onClick={scrollTop} className={` fixed bottom-5 right-10 bg-LinkPrimary h-10 w-10 flex items-center justify-center  rounded-4xl`}>
